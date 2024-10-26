@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    font-family:"Poppins",sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #78c1f3; /* Keep this for the background */
+    overflow: hidden; 
+}
+.img{
+    background-image: url("301049.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.container{
+    
+    background: rgba(255, 255, 255, 0.5);
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 400px; /* Max width for larger screens */
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    position: relative; /* Positioning for child elements */
+    margin: auto;
+}
+.form-group{
+    margin: 20px 0;
+    text-align: start;
+}
+.form-group input{
+    height: 50px;
+    width:100%;
+    font-size: 15px;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid #ffffff;
+}
+button{
+    width: 100%;
+    height:45px;
+    cursor:pointer;
+    font-size: 16px;
+    background: #0099ff;
+    border-radius: 30px;
+    border:none;
+    color:rgba(255,255,255,.5);
+    margin-bottom: 20px;
+}
+.otp-group{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    margin: 20px;
+}
+.otp-group input{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #a3a3a3;
+}
+.otp-form{
+    color:green;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+img{
+    height:150px;
+    margin: 15;
+}
+button.disable{
+    opacity:0.6;
+    pointer-events:none;
+    user-select: none;
+}
+
+.error-shake{
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+@keyframes shake{
+    0%{
+        margin-left: 0rem;
+    }
+    25%{
+        margin-left: 0.5rem;
+    }
+    75%{
+        margin-left: -0.5rem;
+    }
+    100%{
+        margin-left: 0rem;
+    }
+}
+
+body {
+    background: #78c1f3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background: rgba(255,255,255,.5);
+    width: 400px;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+}
+button {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #0099ff;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.result-window {
+        font-family: "Poppins", sans-serif;
+        background-image: url('301049.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        color: white; 
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        width: 400px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+body {
+    display: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0;
+    background-color: rgba(255,255,255,.5); 
+}
+.quiz-item {
+    text-align: left; 
+    margin-bottom: 15px; 
+    padding: 15px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, .8); 
+}
+
+.quiz-option {
+    display: flex;
+    flex-direction:column ; 
+}
+
+body {
+    overflow: auto;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.quiz-scroll {
+    max-height: 80vh; 
+    overflow-y: auto;
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+    }
+    
+    .quiz-scroll {
+        max-height: 50vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; 
+    }
+
+    .quiz-scroll {
+        max-height: 60vh; 
+    }
+}
